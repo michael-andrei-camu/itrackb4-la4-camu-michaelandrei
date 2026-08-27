@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured Movie List</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
-        h1 { color: #333; }
-        .student-info { color: #555; font-weight: bold; margin-bottom: 20px; }
-        table { border-collapse: collapse; width: 50%; background: #fff; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #f2f2f2; }
-    </style>
+    <title>My Movie List</title>
 </head>
 <body>
-    <h1>Featured Movie List</h1>
-    <p class="student-info">Submitted by: Your Name Here</p>
 
-    <table>
+    <h1>My Movie List</h1>
+    <p>Prepared by: Michael Andrei S. Camu</p>
+
+    <table border="1" cellpadding="8" cellspacing="0">
         <thead>
             <tr>
                 <th>Title</th>
@@ -26,14 +19,33 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($movies as $movie)
             <tr>
-                <td>{{ $movie['title'] }}</td>
-                <td>{{ $movie['genre'] }}</td>
-                <td>{{ $movie['rating'] }}</td>
+                <td>Inception</td>
+                <td>Sci-Fi</td>
+                <td>8.8</td>
             </tr>
-            @endforeach
+            <tr>
+                <td>The Dark Knight</td>
+                <td>Action</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Interstellar</td>
+                <td>Sci-Fi</td>
+                <td>8.7</td>
+            </tr>
+            <tr>
+                <td>Parasite</td>
+                <td>Thriller</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Spirited Away</td>
+                <td>Animation</td>
+                <td>8.6</td>
+            </tr>
         </tbody>
     </table>
+
 </body>
 </html>
