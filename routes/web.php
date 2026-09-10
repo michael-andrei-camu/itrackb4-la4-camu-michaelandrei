@@ -1,14 +1,19 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MovieController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [BookController::class, 'listAll']);
 
-Route::get('/whoami', function () {
-    return 'Princesa E. Villanueva | 2023-72349 | BSIT 4C | ITRACKB4 Laravel 12';
-});
+Route::get('/books', [BookController::class, 'listAll'])
+    ->name('books.catalog');
 
-Route::get('/movies', [MovieController::class, 'princesaIndex']);
+Route::get('/books/spotlight', [BookController::class, 'spotlight'])
+    ->name('books.spotlight');
+
+Route::get('/books/genre/{category?}', [BookController::class, 'categoryFilter'])
+    ->name('books.genre');
+
+Route::get('/books/{id}', [BookController::class, 'viewBook'])
+    ->name('books.details');
+
