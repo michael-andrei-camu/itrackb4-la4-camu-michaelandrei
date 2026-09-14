@@ -16,11 +16,11 @@
 
     <header class="bg-dark text-white py-4 mb-4">
         <div class="container">
-            <h1>📚 Campus Shelves</h1>
+            <h1>📚 Shelves</h1>
             <p class="mb-1">Digital Bookstore Directory</p>
             <p class="mb-0">
                 Created By:
-                <strong>Princesa Villanueva</strong>
+                <strong>Michael Andrei Camu</strong>
             </p>
         </div>
     </header>
